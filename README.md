@@ -70,4 +70,8 @@ console çıktılarını görebilmek için `docker attach [container ismi]` komu
 `docker pull mcr.microsoft.com/dotnet/sdk:3.1` komutu ile docker-hub tan image çekebiliriz
 ```
 
+```sql
+`docker push image_name:tag_name` komutu ile docker-hub'a kendi oluşturduğumuz imajı gönderebiliriz. username/reponame ile local içerisinde ki imaj ismimizin aynı olması gerekmektedir.
+```
+
 
