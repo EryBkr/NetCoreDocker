@@ -1,0 +1,5 @@
+C:\Users\Blackerback\OneDrive\Masaüstü\DockerSolution\DockerTest\bin\Release\netcoreapp3.1\publish\DockerTest.exe
+C:\Users\Blackerback\OneDrive\Masaüstü\DockerSolution\DockerTest\bin\Release\netcoreapp3.1\publish\DockerTest.dll
+C:\Users\Blackerback\OneDrive\Masaüstü\DockerSolution\DockerTest\bin\Release\netcoreapp3.1\publish\DockerTest.deps.json
+C:\Users\Blackerback\OneDrive\Masaüstü\DockerSolution\DockerTest\bin\Release\netcoreapp3.1\publish\DockerTest.runtimeconfig.json
+C:\Users\Blackerback\OneDrive\Masaüstü\DockerSolution\DockerTest\bin\Release\netcoreapp3.1\publish\DockerTest.pdb
