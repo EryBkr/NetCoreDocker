@@ -66,3 +66,8 @@ console çıktılarını görebilmek için `docker attach [container ismi]` komu
 `--force` parametresi ile imaj silmek için bağlı container'ın durmuş olması gerekmektedir.
 ```
 
+```sql
+`docker pull mcr.microsoft.com/dotnet/sdk:3.1` komutu ile docker-hub tan image çekebiliriz
+```
+
+
