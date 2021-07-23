@@ -1,4 +1,4 @@
-
+# Docker CLI
 ```sql
 Image build işlemin de `-t` parametresi ile image ye isim veriyoruz
 .(nokta) ile Dockerfile dosyamızın hangi dizinde olduğunu tanımlıyoruz
@@ -78,6 +78,6 @@ console çıktılarını görebilmek için `docker attach [container ismi]` komu
 `docker run --name mvccontainer -p 5000:80 dockermvc:v1` komutu ile docker içerisinde ayağa kalkan uygulamamızın 80 portunu işletim sistemimizin 5000 portuna bağladık.Uygulama default olarak 80 portunda ayağa kalkıyor. `-d` parametresi ile attach modda çalışmasına engel olabiliriz.
 ```
 
-
+# Net Core CLI
 
 
