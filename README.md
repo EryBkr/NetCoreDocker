@@ -74,4 +74,10 @@ console çıktılarını görebilmek için `docker attach [container ismi]` komu
 `docker push image_name:tag_name` komutu ile docker-hub'a kendi oluşturduğumuz imajı gönderebiliriz. username/reponame ile local içerisinde ki imaj ismimizin aynı olması gerekmektedir.
 ```
 
+```sql
+`docker run --name mvccontainer -p 5000:80 dockermvc:v1` komutu ile docker içerisinde ayağa kalkan uygulamamızın 80 portunu işletim sistemimizin 5000 portuna bağladık.Uygulama default olarak 80 portunda ayağa kalkıyor.
+```
+
+
+
 
