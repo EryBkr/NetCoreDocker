@@ -79,5 +79,12 @@ console çıktılarını görebilmek için `docker attach [container ismi]` komu
 ```
 
 # Net Core CLI
+```sql
+`dotnet build` komutu ile dotnet uygulamamızı build edebiliriz.
+```
+
+```sql
+`dotnet run` komutu ile dotnet uygulamamızı ayağa kaldırabiliriz.
+```
 
 
