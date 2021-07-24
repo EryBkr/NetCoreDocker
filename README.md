@@ -3,7 +3,7 @@
 Image build işlemin de `-t` parametresi ile image ye isim veriyoruz
 .(nokta) ile Dockerfile dosyamızın hangi dizinde olduğunu tanımlıyoruz
 .(nokta) işareti mevcut bulunulan dizine işaret eder.
-`docker build -t dockertestimage .`
+`docker build -t dockertestimage .` bazı durumlarda yapılan değişiklikleri göremezsek `--no-cache` parametresi eklememiz gerekebilir
 ```
 
 ```sql
