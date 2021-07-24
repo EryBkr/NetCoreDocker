@@ -78,7 +78,7 @@ console çıktılarını görebilmek için `docker attach [container ismi]` komu
 `docker run --name mvccontainer -p 5000:80 dockermvc:v1` komutu ile docker içerisinde ayağa kalkan uygulamamızın 80 portunu işletim sistemimizin 5000 portuna bağladık.Uygulama default olarak 80 portunda ayağa kalkıyor. `-d` parametresi ile attach modda çalışmasına engel olabiliriz.
 ```
 ```sql
-` docker run -d -p 5000:4500 --name [] --mount type=bind,source="[fiziksel-adres]",target="/app/wwwroot/img" [image-name]
+` docker run -d -p 5000:4500 --name [container-name] --mount type=bind,source="[fiziksel-adres]",target="/app/wwwroot/img" [image-name]
 ` komutu ile docker içerisinde ayağa kalkan uygulamamızın işletim sisteminde hangi klasöre bağlayanacağını (bind-mount) belirliyoruz.Container dursa veya silinse bile klasör içerisinde ki datalar saklanmaya devam edecektir.
 ```
 
