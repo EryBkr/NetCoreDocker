@@ -89,7 +89,7 @@ console çıktılarını görebilmek için `docker attach [container ismi]` komu
 ```
 
 ```sql
-`docker run -d -p 5000:4500 --name [container name] --volume [volume name]:/app/wwwroot/images [image name]` komutu ile oluşturduğumuz volume ile container'ı birbirine bağlıyoruz
+`docker run -d -p 5000:4500 --name [container name] --volume [volume name]:/app/wwwroot/images [image name]` komutu ile oluşturduğumuz volume ile container'ı birbirine bağlıyoruz.O an bağlanan fiziksel klasör içerisinde ki verilerde sanal klasöre kopyalanır.
 ```
 
 
