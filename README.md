@@ -92,7 +92,9 @@ console çıktılarını görebilmek için `docker attach [container ismi]` komu
 `docker run -d -p 5000:4500 --name [container name] --volume [volume name]:/app/wwwroot/images [image name]` komutu ile oluşturduğumuz volume ile containerı birbirine bağlıyoruz.O an bağlanan fiziksel klasör içerisinde ki verilerde sanal klasöre kopyalanır.
 Volume kavramı container dan bağımsız bir kavram olduğu için başka bir container ı da bu volume bağlasak güncel kalacaktır.
 ```
-
+```sql
+`docker volume rm [volume name]` komutu ile oluşturduğumuz volume silinir
+```
 
 
 # Net Core CLI
