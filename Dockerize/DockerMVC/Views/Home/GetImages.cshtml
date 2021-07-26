@@ -1,0 +1,13 @@
+﻿@model IEnumerable<string>
+
+@foreach (var item in Model)
+{
+    <img style="float:left;border:1px solid red;" src="~/img/@item" width="100" />
+    <h1>@item</h1>
+}
+
+
+<form action="/Home/GetImages"  method="post">
+    <input type="text" name="name" />
+    <button type="submit">Sil</button>
+</form>
