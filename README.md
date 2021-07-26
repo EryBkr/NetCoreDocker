@@ -123,6 +123,12 @@ komutu ile environment tanımlayarak uygulama ayarlarını belirliyebiliriz.
 Default olarak Production olarak ayağa kalkacaktır.
 ```
 
+```sql
+`docker run -d --name mycontainer -p 5000:4500 --env ConnectionString="Uzak Sunucu Yolu" myimage` 
+komutu ile kendimize ait environment tanımlayabiliriz.appsettings.Production.json dosyamızda böyle bir alan olmamasına rağmen
+Container ımız default olarak Production ortamında ayağa kalkacak ve bu ortam değişkenine kendi içerisine ekleyecektir.
+appsettings dosyamıza da ekleyebilirdik ama güvenlik için böyle tanımlamak daha uygun olur.
+```
 
 
 
