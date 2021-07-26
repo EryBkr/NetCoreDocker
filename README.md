@@ -128,6 +128,7 @@ Default olarak Production olarak ayağa kalkacaktır.
 komutu ile kendimize ait environment tanımlayabiliriz.appsettings.Production.json dosyamızda böyle bir alan olmamasına rağmen
 Container ımız default olarak Production ortamında ayağa kalkacak ve bu ortam değişkenine kendi içerisine ekleyecektir.
 appsettings dosyamıza da ekleyebilirdik ama güvenlik için böyle tanımlamak daha uygun olur.
+Tekrardan envorinment tanımlamak gerekirse `--env Key=Value --env Key=value` şeklinde ekleyebiliriz
 ```
 
 
