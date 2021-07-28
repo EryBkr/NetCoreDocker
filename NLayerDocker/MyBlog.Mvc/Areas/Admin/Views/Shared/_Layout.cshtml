@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>@ViewBag.Title - Admin Paneli</title>
+
+    @* CSS Dosyalarımızı partial'a ekleyip kullanıyoruz *@
+    <link href="~/adminLTE/css/styles.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/buttons/1.7.0/css/buttons.bootstrap4.min.css"></script>
+
+    @*Sayfaya özel css leri burada yüklüyoruz*@
+    @await RenderSectionAsync("Styles", false)
+
+    @*Siteye özgü yazdığımız  CSS ler diğer kütüphanelerden sonra yüklensin diye bu şekilde kullandık*@
+    <link href="~/adminLTE/css/site.css" rel="stylesheet" />
+
+</head>
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" asp-area="Admin" asp-action="Index" asp-controller="Home">Admin Paneli</a>
+        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Arama..." aria-label="Search" aria-describedby="basic-addon2" />
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </form>
+        <!-- Navbar-->
+        @await Component.InvokeAsync("UserMenu")
+    </nav>
+    <div id="layoutSidenav">
+        @await Component.InvokeAsync("AdminMenu")
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+
+
+
+                    @RenderBody()
+                </div>
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Tüm Hakları Saklıdır &copy; My Blog 2021</div>
+                        <div>
+                            <a href="#">Gizlilik Politikası</a>
+                            &middot;
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    @* JS dosyalarımızı ayrı bir partial'a ekledik *@
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="~/adminLTE/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js" integrity="sha512-5vwN8yor2fFT9pgPS9p9R7AszYaNn0LkQElTXIsZFCL7ucT8zDCAqlQXDdaqgA1mZP47hdvztBMsIoFxq/FyyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+    <script src="~/adminLTE/assets/demo/datatables-demo.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.7.0/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.7.0/js/buttons.bootstrap4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="~/adminLTE/js/site.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@@10"></script>
+
+    @await RenderSectionAsync("Scripts", false)
+
+    @*Action içerisinde oluşturulan NToastr mesajlarını gösteriyoruz*@
+    @await Component.InvokeAsync("NToastNotify")
+</body>
+</html>
