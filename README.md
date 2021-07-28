@@ -131,6 +131,11 @@ appsettings dosyamıza da ekleyebilirdik ama güvenlik için böyle tanımlamak 
 Tekrardan envorinment tanımlamak gerekirse `--env Key=Value --env Key=value` şeklinde ekleyebiliriz
 ```
 
+```sql
+`docker rm $(docker ps -a -q)` 
+Çalışmayan büyün container ları silebiliriz.Çalışanları da işin içine dahil etmek istersek --from eklememiz gerekecektir.
+```
+
 
 
 # Net Core CLI
@@ -141,3 +146,5 @@ Tekrardan envorinment tanımlamak gerekirse `--env Key=Value --env Key=value` ş
 ```sql
 `dotnet run` komutu ile dotnet uygulamamızı ayağa kaldırabiliriz.
 ```
+
+
